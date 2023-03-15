@@ -1,0 +1,18 @@
+{
+  "name": "askii",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx ts-node App.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "readline": "^1.3.0",
+    "ts-node": "^10.9.1",
+    "@types/node": "^18.15.1",
+    "typescript": "^4.9.5"
+  }
+}
