@@ -75,6 +75,10 @@ class Canvas {
     }
 
     public drawPoint(x: number, y: number) {
+        if (!this.isValidPosition(x, y)) {
+            console.error(`Invalid point coordinates (${x}, ${y})`)
+            return
+        }
         this.canvas[y][x] = this.char
     }
 
@@ -101,6 +105,11 @@ class Canvas {
     }
 
     public fill(x: number, y: number): void {
+        if (!this.isValidPosition(x, y)) {
+            console.error(`Invalid fill coordinates (${x}, ${y})`)
+            return
+        }
+
         let char = this.char
         const currentChar = this.canvas[y][x];
 
